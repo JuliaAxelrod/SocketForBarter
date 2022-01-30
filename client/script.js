@@ -7,7 +7,7 @@ const form = document.getElementById("form")
 
 const socket = io("http://localhost:3000")
 socket.on("connect", () => {
-    displayMessage (`You connected with id: ${socket.id}`)
+    displayMessage (`You connected with id: ${socket.id}, enter seller's username and click "Join"`)
 })
 
 socket.on("receive-message", message => {
